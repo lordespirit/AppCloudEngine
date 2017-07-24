@@ -1,0 +1,39 @@
+
+body
+{
+	text-align: center;
+	color:#e6f7ff;
+	margin-left:5px;
+	margin-right:5px;
+	margin-top:5px;
+	margin-bottom:5px;
+	margin-width:5px;
+	margin-height:5px;
+	background-color:#A3A6BA; 
+
+	
+	#header #footer
+	{
+		padding: 5px;
+		width: 500px;
+	  	margin: 5 auto; 
+		border-style: solid;
+		border-width: 1px;
+		border-color: black;
+	}
+	
+	div
+{
+		padding: 5 px;
+		margin: 5px;
+		border-style: solid;
+		border-width: 1px;
+		border-color: black;
+		
+		h3 {
+		text-align: center;
+		margin: 5px;
+		}
+	}
+}
+

@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         version="2.5">
+         
+  <servlet>
+    <servlet-name>Informacion</servlet-name>
+    <servlet-class>com.poo.finalapp.Informacion</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Informacion</servlet-name>
+    <url-pattern>/acercade</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>InsertAdmin</servlet-name>
+    <servlet-class>com.poo.finalapp.InsertAdmin</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>InsertAdmin</servlet-name>
+    <url-pattern>/InsertAdmin</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>SelectAllAdmin</servlet-name>
+    <servlet-class>com.poo.finalapp.SelectAllAdmin</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SelectAllAdmin</servlet-name>
+    <url-pattern>/SelectAllAdmin</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>FindAdminByName</servlet-name>
+    <servlet-class>com.poo.finalapp.FindAdminByName</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FindAdminByName</servlet-name>
+    <url-pattern>/FindAdminByName</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>SelectAdminListForDelete</servlet-name>
+    <servlet-class>com.poo.finalapp.SelectAdminListForDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SelectAdminListForDelete</servlet-name>
+    <url-pattern>/SelectAdminListForDelete</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>DeleteOneAdmin</servlet-name>
+    <servlet-class>com.poo.finalapp.DeleteOneAdmin</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteOneAdmin</servlet-name>
+    <url-pattern>/DeleteOneAdmin</url-pattern>
+  </servlet-mapping>
+
+ <servlet>
+    <servlet-name>DeleteAllAdmin</servlet-name>
+    <servlet-class>com.poo.finalapp.DeleteAllAdmin</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteAllAdmin</servlet-name>
+    <url-pattern>/DeleteAllAdmin</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>SelectAdminListForUpdate</servlet-name>
+    <servlet-class>com.poo.finalapp.SelectAdminListForUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SelectAdminListForUpdate</servlet-name>
+    <url-pattern>/SelectAdminListForUpdate</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>UpdateAdmin</servlet-name>
+    <servlet-class>com.poo.finalapp.UpdateAdmin</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateAdmin</servlet-name>
+    <url-pattern>/UpdateAdmin</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>InsertGallerySelectAdmin</servlet-name>
+    <servlet-class>com.poo.finalapp.InsertGallerySelectAdmin</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>InsertGallerySelectAdmin</servlet-name>
+    <url-pattern>/InsertGallerySelectAdmin</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>InsertGallery</servlet-name>
+    <servlet-class>com.poo.finalapp.InsertGallery</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>InsertGallery</servlet-name>
+    <url-pattern>/InsertGallery</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>SelectAllGalleries</servlet-name>
+    <servlet-class>com.poo.finalapp.SelectAllGalleries</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SelectAllGalleries</servlet-name>
+    <url-pattern>/SelectAllGalleries</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>InsertItemIntoGallery</servlet-name>
+    <servlet-class>com.poo.finalapp.InsertItemIntoGallery</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>InsertItemIntoGallery</servlet-name>
+    <url-pattern>/InsertItemIntoGallery</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>InsertItem</servlet-name>
+    <servlet-class>com.poo.finalapp.InsertItem</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>InsertItem</servlet-name>
+    <url-pattern>/InsertItem</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>SelectAdminListForShowGalleries</servlet-name>
+    <servlet-class>com.poo.finalapp.SelectAdminListForShowGalleries</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SelectAdminListForShowGalleries</servlet-name>
+    <url-pattern>/SelectAdminListForShowGalleries</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>SelectGalleriesListForShowItems</servlet-name>
+    <servlet-class>com.poo.finalapp.SelectGalleriesListForShowItems</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SelectGalleriesListForShowItems</servlet-name>
+    <url-pattern>/SelectGalleriesListForShowItems</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>SelectAdminGalleries</servlet-name>
+    <servlet-class>com.poo.finalapp.SelectAdminGalleries</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SelectAdminGalleries</servlet-name>
+    <url-pattern>/SelectAdminGalleries</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>SelectGalleryItems</servlet-name>
+    <servlet-class>com.poo.finalapp.SelectGalleryItems</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SelectGalleryItems</servlet-name>
+    <url-pattern>/SelectGalleryItems</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>SelectGalleryListForDelete</servlet-name>
+    <servlet-class>com.poo.finalapp.SelectGalleryListForDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SelectGalleryListForDelete</servlet-name>
+    <url-pattern>/SelectGalleryListForDelete</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>DeleteOneGallery</servlet-name>
+    <servlet-class>com.poo.finalapp.DeleteOneGallery</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteOneGallery</servlet-name>
+    <url-pattern>/DeleteOneGallery</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>SelectItemListForDelete</servlet-name>
+    <servlet-class>com.poo.finalapp.SelectItemListForDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SelectItemListForDelete</servlet-name>
+    <url-pattern>/SelectItemListForDelete</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>DeleteOneItem</servlet-name>
+    <servlet-class>com.poo.finalapp.DeleteOneItem</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteOneItem</servlet-name>
+    <url-pattern>/DeleteOneItem</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>InputInsertAdmin</servlet-name>
+    <servlet-class>com.poo.finalapp.InputInsertAdmin</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>InputInsertAdmin</servlet-name>
+    <url-pattern>/InputInsertAdmin</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>InputFindAdminByName</servlet-name>
+    <servlet-class>com.poo.finalapp.InputFindAdminByName</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>InputFindAdminByName</servlet-name> 
+    <url-pattern>/InputFindAdminByName</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>SelectGalleryListForUpdate</servlet-name>
+    <servlet-class>com.poo.finalapp.SelectGalleryListForUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SelectGalleryListForUpdate</servlet-name>
+    <url-pattern>/SelectGalleryListForUpdate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>UpdateGallery</servlet-name>
+    <servlet-class>com.poo.finalapp.UpdateGallery</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateGallery</servlet-name>
+    <url-pattern>/UpdateGallery</url-pattern> 
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>SelectItemListForUpdate</servlet-name>
+    <servlet-class>com.poo.finalapp.SelectItemListForUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SelectItemListForUpdate</servlet-name>
+    <url-pattern>/SelectItemListForUpdate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>UpdateItem</servlet-name>
+    <servlet-class>com.poo.finalapp.UpdateItem</servlet-class>
+  </servlet>
+  <servlet-mapping> 
+    <servlet-name>UpdateItem</servlet-name>
+    <url-pattern>/UpdateItem</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>SelectAllItems</servlet-name>
+    <servlet-class>com.poo.finalapp.SelectAllItems</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SelectAllItems</servlet-name>
+    <url-pattern>/SelectAllItems</url-pattern>
+  </servlet-mapping>
+  
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+</web-app>
+
+

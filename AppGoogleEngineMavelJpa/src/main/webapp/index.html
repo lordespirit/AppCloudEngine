@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<title>Admin App</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+.w3-sidebar {width: 120px;background: #222;}
+#main {margin-left: 120px}
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+<body class="w3-black">
+
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+  </div>
+</div>
+
+<div class="w3-padding-large" id="main">
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">DashBoard</span></h1>
+    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/6/62/MySQL.svg/1024px-MySQL.svg.png" alt="boy" class="w3-image" width="400" height="600">
+  </header>
+
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey"></h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>Web de administración de la base de datos
+    </p>
+    
+    <h3 class="w3-padding-16 w3-text-light-grey">Opciones disponibles</h3>
+    
+    <h3 class="w3-wide">Select</h3>
+      		
+		<div class="w3-section">
+	      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> SELECT ALL ADMINS </p> <a href="/SelectAllAdmin"><p>Ver todos los administradores</p></a>
+	      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> FIND ADMIN</p><a href="/InputFindAdminByName"><p>Buscar administrador por nombre</p></a>
+	      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> SELECT ALL GALLERIES </p> <a href="/SelectAllGalleries"><p>Ver todas las galerías</p></a>
+	   	  <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> SELECT ADMIN GALLERIES </p> <a href="/SelectAdminListForShowGalleries"><p>Ver galerías de un administrador</p></a>
+	   	  <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> SELECT ALL ITEMS </p> <a href="/SelectAllItems"><p>Ver todos los items</p></a> 
+	   	  <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> SELECT ITEMS OF A GALLERY </p> <a href="/SelectGalleriesListForShowItems"><p>Ver ítems de una galería</p></a> 
+	    </div><br>
+			    
+    <h3 class="w3-wide">Insert</h3>
+    
+    	<div class="w3-section">
+	      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> INSERT ADMIN </p> <a href="/InputInsertAdmin"><p>Insertar administrador</p></a>
+	      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> INSERT GALLERY </p> <a href="/InsertGallerySelectAdmin"><p>Insertar galeria a un administrador</p></a>
+	      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> INSERT ITEM </p> <a href="/InsertItemIntoGallery"><p>Insertar item en una galería</p></a>
+	    </div><br>
+      
+    <h3 class="w3-wide">Update</h3>
+    
+    <div class="w3-section">
+	      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> UPDATE ADMIN </p> <a href="/SelectAdminListForUpdate"><p>Actualizar administrador</p></a>
+	      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> UPDATE GALLERY</p> <a href="/SelectGalleryListForUpdate"><p>Actualizar galería</p></a>
+	      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> UPDATE ITEM</p> <a href="/SelectItemListForUpdate"><p>Actualizar Item</p></a>
+	 </div><br>
+			
+    
+    <h3 class="w3-wide">Delete</h3>
+        
+        <div class="w3-section">
+	      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> DELETE ADMIN </p> <a href="/SelectAdminListForDelete"><p>Borrar un administrador</p></a>
+	      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> DELETE ALL </p> <a href="/DeleteAllAdmin"><p>Borrar todos los administradores [Cuidado! Borra toda la base de datos]</p></a>
+	      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> DELETE GALLERY </p> <a href="/SelectGalleryListForDelete"><p>Borrar una galería</p></a>
+		  <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> DELETE ITEM </p> <a href="/SelectItemListForDelete"><p>Borrar un ítem</p></a>		      
+	 </div><br>   
+   
+  </div>
+
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Contacta conmigo:</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> España, ES</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Telefono: 0034 - 000 000 000</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: admin@testfuncional.com</p>
+    </div><br>
+    
+    <p>Ponerse en contacto con el administrador de la página:</p>
+
+    <form action="/acercade" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Nombre" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Correo electrónico" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Motivo" required name="Subject"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Mensaje" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> Enviar mensaje
+        </button>
+      </p>
+    </form>
+  </div>
+  
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+	<table>
+		      <tr>
+		        <td colspan="2" style="font-weight:bold;">Información</td>        
+		      </tr>
+		      <tr>
+		        <td><a href='/acercade'>Acerca de esta web</a></td>
+		      </tr>
+	</table>
+  </footer>
+
+</div>
+
+</body>
+</html>
